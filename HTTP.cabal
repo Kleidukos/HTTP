@@ -1,9 +1,9 @@
-Cabal-Version: >= 1.10
+Cabal-Version: 3.0
 Name: HTTP
 Version: 4000.4.1
 x-revision: 5
 Build-type: Simple
-License: BSD3
+License: BSD-3-Clause
 License-file: LICENSE
 Author: Warrick Gray <warrick.gray@hotmail.com>
 Maintainer: Ganesh Sittampalam <ganesh@earth.li>
@@ -92,6 +92,7 @@ Flag warp-tests
   manual:      True
 
 Library
+  Autogen-modules: Paths_HTTP
   Exposed-modules:
                  Network.BufferType,
                  Network.Stream,
